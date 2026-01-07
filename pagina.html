@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="pagina" content="Turism in Riudellots">
+        <title>TURISM IN RIUDELLOTS</title>
+        <link rel="stylesheet" href="linked/style.css">
+    </head>
+    <body> 
+        <script src="linked/script.js"></script>
+        <div id="banner"><img src="Banner.png"></div>
+        <div id="main">
+            <h1>About Riudellots</h1>
+            <div class="content">
+                <p>Riudellots is the perfect quiet getaway for people looking 
+                    to flee the city's bustling sound. It can also be the perfect 
+                    weekend plan, whether it's to enjoy it's nature or it's 
+                    atmosphere.<br/><br/>
+                    Riudellots' name in Catalan means "Muddy River", this is in 
+                    reference to the fact that in 1964 the town was flooded with
+                    4m of mud after the river overflowed. What was it called beforehand you ask?
+                    Only god knows.<br/><br/>
+                    The town is located in the province of Girona, in Catalonia,
+                    Spain. It is located 12km away from Girona's capital and 92km
+                    from Barcelona. It has a population of around 4,000 people and
+                    an area of 13.1 km².
+                    <br/><br/>
+                    Riudellots also enjoys a variaety of local restaurants, with the
+                    main attractions being <i>"Pizzeria 33"</i> & <i>"Via Augusta"</i>. <br/>
+                    <i>*Note that "Pizzeria 33" is closed on weekdays*</i>
+                </p>
+                <div>
+                    <img src="images/info_imatge.jpg" id="info_imatge">
+                    <video controls id="info_video">
+                        <source src="video/Fiporc video.mp4" type="video/mp4">
+                    </video>
+                </div>
+            </div>
+            <h1>Notable Activities</h1>
+            <div class="content">
+            <ul>
+                <li><b>FIPORC:</b> <i>"Fiporc"</i> is Riudellots' main festival, 
+                    since Riudellots is Europe's third town with the
+                     highest number of slaughtered each year, they celebrate the porcessing of pork.<br/><br/>
+                    Enjoy many activities as well as incredible food cooked by farmers on the spot in <i>"Fiporc"</i><br/>
+                    <i>*Fiporc is usally helf in mid february, but it can vary from year to year*</i>
+                </li>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <li><b>Walking:</b> If what yu are looking for is a quiet walk in nature,
+                    Riudellots has many trails that you can take to enjoy the beautiful
+                    Catalan countryside.<br/><br/>
+                    You can enjoy paths that go through the forest, or perhaps ones that follow one of the many rvers present in the procimity of 
+                    Riudellots.<br/><br/>
+                    There are also paths that go through the fields, where you can see farmers working and also animals grazing.<br/>
+                </li>
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <li><b>Fundació Mona:</b> If you are an animal lover, Fundació Mona is the place for you.<br/><br/>
+                    Fundació Mona is a sanctuary for primates that have been rescued from 
+                    illegal trafficking or from inadequate living conditions in captivity.<br/><br/>
+                    You can visit the sanctuary and learn about the primates and the work
+                    that Fundació Mona does to protect them.<br/>
+                    <i>*Visits must be booked in advance*</i>
+                </li>
+            </ul>
+            <div>
+                <img src="images/fiporc_img.jpeg" id="fiporc_img" onclick="Add_FIPORC()">
+                <img src="images/91-img-file1576854099.jpg" id="via_img" onclick="Add_Via()">
+                <figure id="via_sound">
+                    <figcaption>Immerse yourself in Nature!</figcaption>
+                    <audio controls src="sound/soroll_bosc.mp3"></audio>
+                </figure>
+                <img src="images/mona.jpg" id="mona_img" onclick="Add_Mona()">
+            </div>
+        </div>
+        <h1>!!Plan your visit to Riudellots!!</h1>
+        <div class="content">
+            <div class="infobox">
+                <p>*Click on the image for an activity to add it to you to-do list</p>
+                <p>*Click on one of your booked activities to remove it from the list</p>
+            </div>
+            <div class="content" id="booked_activities">
+                <ul id="booked_list">
+                    <li id="fiporc_booked" onclick="Remove_FIPORC()" style="display:none;">FIPORC</li>
+                    <li id="via_booked" onclick="Remove_Via()" style="display:none;">Via Verda</li>
+                    <li id="mona_booked" onclick="Remove_Mona()" style="display:none;">Fundació Mona</li>
+                </ul>
+            </div>
+        </div>
+    </body>
+</html>
